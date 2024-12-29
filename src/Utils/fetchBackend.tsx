@@ -103,13 +103,13 @@ export default async function axiosFetch({
     movieVideoProvider: proxyURL
       ? proxyURL +
         encodeURIComponent(
-          `${providerAPI}?requestID=movieVideoProvider&id=${id}&service=${service}`
+          `${providerAPI}?requestID=movieVideoProvider&id=${id}&service=${service}`,
         )
       : `${providerAPI}?requestID=movieVideoProvider&id=${id}&service=${service}`,
     tvVideoProvider: proxyURL
       ? proxyURL +
         encodeURIComponent(
-          `${providerAPI}?requestID=tvVideoProvider&id=${id}&season=${season}&episode=${episode}&service=${service}`
+          `${providerAPI}?requestID=tvVideoProvider&id=${id}&season=${season}&episode=${episode}&service=${service}`,
         )
       : `${providerAPI}?requestID=tvVideoProvider&id=${id}&season=${season}&episode=${episode}&service=${service}`,
 
@@ -117,7 +117,7 @@ export default async function axiosFetch({
     movieExternalVideoProvider: proxyURL
       ? proxyURL +
         encodeURIComponent(
-          `${baseURL}?requestID=movieExternalVideoProvider&id=${id}`
+          `${baseURL}?requestID=movieExternalVideoProvider&id=${id}`,
         )
       : `${baseURL}?requestID=movieExternalVideoProvider&id=${id}`,
     tvExternalVideoProvider: proxyURL
